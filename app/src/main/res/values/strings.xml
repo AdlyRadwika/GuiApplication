@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">GUIAppAdlyR</string>
+    <string-array name="pilihkelas">
+        <item>--Pilih--</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+    </string-array>
+    <string-array name="pilihagama">
+        <item>--Pilih--</item>
+        <item>Islam</item>
+        <item>Kristen</item>
+        <item>Katolik</item>
+        <item>Hindu</item>
+        <item>Buddha</item>
+        <item>Lainnya</item>
+    </string-array>
 </resources>
