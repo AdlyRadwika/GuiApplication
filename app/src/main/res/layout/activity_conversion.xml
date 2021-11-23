@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -72,6 +73,7 @@
             android:textSize="20sp"
             android:textColor="#ffffff"
             app:backgroundTint="@color/red"
+            android:onClick="toUsd"
             />
 
         <Button
@@ -83,19 +85,20 @@
             android:textSize="20sp"
             android:textColor="#ffffff"
             app:backgroundTint="@color/dark_red"
+            android:onClick="toYen"
             />
 
         <Button
-            android:id="@+id/bRinggit"
+            android:id="@+id/bYuan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="RUPIAH TO RINGGIT"
+            android:text="RUPIAH TO YUAN"
             android:textSize="20sp"
             android:textColor="#ffffff"
             app:backgroundTint="@color/dark_purple"
+            android:onClick="toYuan"
             />
 
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
