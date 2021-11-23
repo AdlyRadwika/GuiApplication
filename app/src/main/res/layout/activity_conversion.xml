@@ -6,13 +6,96 @@
     android:layout_height="match_parent"
     tools:context=".Conversion">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="INI CONVESION"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/iBank"
+            android:layout_width="297dp"
+            android:layout_height="249dp"
+            app:srcCompat="@drawable/bank_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/etInputMoney"
+                android:layout_width="73dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="RP 0"
+                android:minHeight="48dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvEqual"
+                android:layout_width="51dp"
+                android:layout_height="32dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="="
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvConvResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="Hasil Konversi"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bUsd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="RUPIAH TO USD"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            app:backgroundTint="@color/red"
+            />
+
+        <Button
+            android:id="@+id/bYen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="RUPIAH TO YEN"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            app:backgroundTint="@color/dark_red"
+            />
+
+        <Button
+            android:id="@+id/bRinggit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="RUPIAH TO RINGGIT"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            app:backgroundTint="@color/dark_purple"
+            />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
